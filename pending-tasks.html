@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <meta
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -12,8 +12,8 @@
             rel="stylesheet"
             href="assets/vendor/bootstrap/css/bootstrap.min.css"
     />
-    <link href="assets/vendor/fonts/circular-std/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/libs/css/style.css" />
+    <link href="assets/vendor/fonts/circular-std/style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/libs/css/style.css"/>
     <link
             rel="stylesheet"
             href="assets/vendor/fonts/fontawesome/css/fontawesome-all.css"
@@ -30,7 +30,7 @@
             rel="stylesheet"
             href="assets/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css"
     />
-    <link rel="stylesheet" href="assets/vendor/charts/c3charts/c3.css" />
+    <link rel="stylesheet" href="assets/vendor/charts/c3charts/c3.css"/>
     <link
             rel="stylesheet"
             href="assets/vendor/fonts/flag-icon-css/flag-icon.min.css"
@@ -48,7 +48,7 @@
     <!-- ============================================================== -->
     <div class="dashboard-header">
         <nav class="navbar navbar-expand-lg bg-white fixed-top">
-            <a class="navbar-brand" href="https://www.cybertekschool.com/"
+            <a class="navbar-brand" href="welcome.html"
             >Cybertek</a
             >
             <button
@@ -216,6 +216,134 @@
                 <!-- pageheader  -->
                 <!-- ============================================================== -->
 
+                <div class="row">
+                    <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12 col-12">
+                        <div class="section-block" id="basicform">
+                            <h3>Task Status</h3>
+                            <form>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="form-group">
+                                            <label for="project-select">Project</label>
+                                            <select class="form-control" id="project-select" disabled>
+                                                <option name="select" value="select">Select</option>
+                                                <option name="admin" value="admin">PRJ001</option>
+                                                <option name="manager" value="manager">PRJ002</option>
+                                                <option name="employee" value="employee">PRJ003</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="form-group">
+                                            <label for="employee-select">Assigned Employee</label>
+                                            <select class="form-control" id="employee-select" disabled>
+                                                <option name="select" value="select">Select</option>
+                                                <option name="admin" value="admin">Sedat Emre Baran</option>
+                                                <option name="manager" value="manager">Selcen Azra Baran</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="form-group">
+                                            <label for="inputDefault" class="col-form-label">Task Subject</label>
+                                            <input id="inputDefault" type="text" class="form-control" disabled>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6">
+
+                                        <div class="form-group">
+                                            <label for="detail">Detail</label>
+                                            <textarea class="form-control" id="detail"
+                                                      rows="3" disabled></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="form-group">
+                                            <label for="project-status">Project</label>
+                                            <select class="form-control" id="project-status" >
+                                                <option name="select" value="select">Select</option>
+                                                <option name="admin" value="admin">In Progress</option>
+                                                <option name="manager" value="manager">UAT Testing</option>
+                                                <option name="employee" value="employee">Completed</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="float-right">
+                                            <button type="button" class="btn btn-success">Save</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+
+                        <h3>Task List</h3>
+
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th scope="col">Project</th>
+                                <th scope="col">Task Subject</th>
+                                <th scope="col">Assigned Employee</th>
+                                <th scope="col">Assigned Date</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>PRJ001-Human Resources CRM</td>
+                                <td>Database Connection</td>
+                                <td>Sedat Emre Baran</td>
+                                <td>11/03/2020</td>
+                                <td>In Progress</td>
+                                <td>
+                                    <button type="button" class="btn btn-warning">Update</button>
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>PRJ002-Infra Upgrade</td>
+                                <td>Server LAN Settings</td>
+                                <td>Selcen Azra Baran</td>
+                                <td>02/06/2020</td>
+                                <td>UAT Testing</td>
+                                <td>
+                                    <button type="button" class="btn btn-warning">Update</button>
+
+                                </td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+
+                    </div>
+
+
+                </div>
                 <!-- ============================================================== -->
                 <!-- end pageheader  -->
                 <!-- ============================================================== -->
