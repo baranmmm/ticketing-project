@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <meta
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -12,8 +12,8 @@
             rel="stylesheet"
             href="assets/vendor/bootstrap/css/bootstrap.min.css"
     />
-    <link href="assets/vendor/fonts/circular-std/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/libs/css/style.css" />
+    <link href="assets/vendor/fonts/circular-std/style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/libs/css/style.css"/>
     <link
             rel="stylesheet"
             href="assets/vendor/fonts/fontawesome/css/fontawesome-all.css"
@@ -30,7 +30,7 @@
             rel="stylesheet"
             href="assets/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css"
     />
-    <link rel="stylesheet" href="assets/vendor/charts/c3charts/c3.css" />
+    <link rel="stylesheet" href="assets/vendor/charts/c3charts/c3.css"/>
     <link
             rel="stylesheet"
             href="assets/vendor/fonts/flag-icon-css/flag-icon.min.css"
@@ -216,21 +216,158 @@
                 <!-- pageheader  -->
                 <!-- ============================================================== -->
 
+                <div class="row">
+                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                        <div class="section-block" id="basicform">
+                            <h3>Project Create</h3>
+                            <form>
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12">
+                                        <div class="form-group">
+                                            <label for="projectname" class="col-form-label">Project Name</label>
+                                            <input id="projectname" type="text"
+                                                   class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12">
+                                        <div class="form-group">
+                                            <label for="projectcode" class="col-form-label">Project Code</label>
+                                            <input id="projectcode" type="text"
+                                                   class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12">
+                                        <div class="form-group">
+                                            <label for="manager-select">Assigned Manager</label>
+                                            <select class="form-control" id="manager-select">
+                                                <option name="select" value="select">Select</option>
+                                                <option name="admin" value="admin">Mehmet Baran</option>
+                                                <option name="manager" value="manager">Sati Baran</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6">
+                                        <label for="projectstart">Project Start Date</label><br>
+                                        <input class="form-control" type="date" value="YYYY-MM-DD" id="projectstart">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <label for="projectend">Project Start Date</label><br>
+                                        <input class="form-control" type="date" value="YYYY-MM-DD" id="projectend">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12">
+                                        <br>
+                                        <div class="form-group">
+                                            <label for="exampleFormControlTextarea1">Example textarea</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                      rows="3"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12">
+                                        <div class="float-right">
+                                            <button type="button" class="btn btn-success">Save</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+
+                        <h3>Project List</h3>
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th scope="col">Project Code</th>
+                                <th scope="col">Project Name</th>
+                                <th scope="col">Start / End Date</th>
+                                <th scope="col">Manager</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>PRJ001</td>
+                                <td>Human Resource CRM</td>
+                                <td>11.03.2020 - 11.09.2020</td>
+                                <td>Mehmet Baran</td>
+                                <td>In Progress</td>
+                                <td>
+                                    <button type="button" class="btn btn-warning">Update</button>
+                                    <button type="button" class="btn btn-danger">Delete</button>
+                                    <button type="button" class="btn btn-primary">Complete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>PRJ002</td>
+                                <td>Infra Upgrade</td>
+                                <td>11.03.2020 - 11.06.2020</td>
+                                <td>Sati Baran</td>
+                                <td>UAT Testing</td>
+                                <td>
+                                    <button type="button" class="btn btn-warning">Update</button>
+                                    <button type="button" class="btn btn-danger">Delete</button>
+                                    <button type="button" class="btn btn-primary">Complete</button>
+                                </td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+
+                    </div>
+
+
+                </div>
                 <!-- ============================================================== -->
                 <!-- end pageheader  -->
                 <!-- ============================================================== -->
             </div>
         </div>
         <!-- ============================================================== -->
-
+        <div class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                        Copyright © 2020 Baran Corporation. All rights reserved.
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="text-md-right footer-links d-none d-sm-block">
+                            <a href="javascript: void(0);">About</a>
+                            <a href="javascript: void(0);">Support</a>
+                            <a href="javascript: void(0);">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- ============================================================== -->
     </div>
+
     <!-- ============================================================== -->
     <!-- end wrapper  -->
     <!-- ============================================================== -->
 </div>
 <!-- ============================================================== -->
 <!-- end main wrapper  -->
+
 <!-- ============================================================== -->
 <!-- Optional JavaScript -->
 <!-- jquery 3.3.1 -->
